@@ -5,20 +5,6 @@ from time import sleep
 
 FONT = ("Lucida Calligraphy", 12, "bold")
 ALIGN = "center"
-# ZODIACS = {
-#     "Pisces": (-328.0, 5.0),
-#     "Aquarius": (-283.0, 164.0),
-#     "Capricorn": (-149.0, 271.0),
-#     "Sagittarius": (-8.0, 305.0),
-#     "Scorpio": (172.0, 249.0),
-#     "Libra": (268.0, 164.0),
-#     "Virgo": (312.0, 23.0),
-#     "Leo": (253.0, -181.0),
-#     "Cancer": (171.0, -267.0),
-#     "Gemini": (1.0, -315.0),
-#     "Taurus": (-165.0, -275.0),
-#     "Aries": (-279.0, -149.0),
-# }
 
 screen = turtle.Screen()
 screen.setup(width=832, height=832)
@@ -93,25 +79,3 @@ for name in zodiacs.names.to_list():
 
 zodiac_study = pandas.DataFrame(missed_zodiacs)
 zodiac_study.to_csv("zodiac_study.csv")
-
-# zodiacs = {
-#     "names": ["Pisces", "Aquarius", "Capricorn", "Sagittarius", "Scorpio", "Libra", "Virgo", "Leo", "Cancer",
-#               "Gemini", "Taurus", "Aries"],
-#     "x": [],
-#     "y": [],
-# }
-#
-#
-# def get_coor(x, y):
-#     print(x, y)
-#     zodiacs["x"].append(float(x))
-#     zodiacs["y"].append(float(y))
-#
-#
-# turtle.onscreenclick(get_coor)
-#
-#
-#
-#
-# zodiac_data = pandas.DataFrame(zodiacs)
-# zodiac_data.to_csv("zodiac_data.csv")
